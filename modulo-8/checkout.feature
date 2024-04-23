@@ -29,11 +29,11 @@ Exemplos:
 
 
 Cenário: Cadastro falta de dados
-Quando digito <Nome>, <Sobrenome>, <País>, <Endereço>, <Cidade>, <cep>, <Telefone>, <E-mail> e clicar em cadastrar
+Quando deixar de preencher algum campo obrigatório ( ou algum campo obrigatório marcado com asteriscos)
 Então devo ver a mensagem de alerta "Preencha todos os campos obrigatórios"
 
 Exemplos:
-| Nome | Sobrenome | País | Endereço | Cidade | cep | Telefone | E-mail |
+| Nome* | Sobrenome* | País* | Endereço* | Cidade* | cep* | Telefone* | E-mail* |
 | "" | "Oliveira" | "Brasil" | "Rua 3" | "São Paulo" | "12345-678" | "55999999999" | "ana@gmail.com" |
 | "Ana" | "" | "Brasil" | "Rua 3" | "São Paulo" | "12345-678" | "55999999999" | "ana@gmail.com" |
 | "Ana" | "Oliveira" | "" | "Rua 3" | "São Paulo" | "12345-678" | "55999999999" | "ana@gmail.com" |
