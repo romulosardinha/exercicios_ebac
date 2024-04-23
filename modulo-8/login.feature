@@ -14,9 +14,7 @@ Contexto:
 Dado que estou na página de login
 
 Cenário: Login com sucesso
-Quando eu digitar o usuário <usuario> 
-E a senha <senha>
-E clicar em entrar
+Quando eu digitar o usuário <usuario>, a senha <senha> e clicar em entrar
 Então devo ser direcionado para a tela de checkout
 
 Exemplos:
@@ -26,9 +24,7 @@ Exemplos:
 | "user3"   | "789"   |
 
 Cenário: Login com falha
-Quando eu digitar o usuário <usuario>
-E a senha <senha>
-E clicar em entrar
+Quando eu digitar o usuário <usuario>, a senha <senha>, e clicar em entrar
 Então devo visualizar a mensagem de alerta “Usuário ou senha inválidos”
 
 Exemplos:

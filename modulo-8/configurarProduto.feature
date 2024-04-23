@@ -15,10 +15,7 @@ Critérios de Aceitação:
     E estou na página de um produto que desejo comprar
 
   Cenário: Configuração e Adição de Produto ao Carrinho
-    Quando eu selecionar a cor <cor>
-    E selecionar o tamanho <tamanho>
-    E escolher a quantidade <quantidade>
-    E clicar no botão "Adicionar ao Carrinho"
+    Quando eu selecionar a cor <cor>, <tamanho>, <quantidade> e clicar no botão "Adicionar ao Carrinho"
     Então o produto deve ser adicionado ao meu carrinho de compras
 
     Exemplos: 
@@ -35,15 +32,9 @@ Critérios de Aceitação:
       | "Marrom"   | "M"     | "10"       |
 
   Cenário: Configuração e Adição de mais de 10 Produtos ao Carrinho
-    Quando eu selecionar a cor Azul
-    E selecionar o tamanho M
-    E escolher a quantidade 11
-    E clicar no botão "Adicionar ao Carrinho"
+    Quando eu selecionar a cor Azul e o tamanho M e a quantidade 11 e clicar no botão "Adicionar ao Carrinho"
     Então o sistema deve exibir uma mensagem de erro informando que o limite de produtos por venda foi atingido
 
   Cenário: Limpar Configuração do Produto
-    Quando eu selecionar a cor Azul
-    E selecionar o tamanho M
-    E escolher a quantidade 1
-    E clicar no botão "Limpar"
+    Quando eu selecionar a cor Azul, selecionar o tamanho M, escolher a quantidade 1, e clicar botão "Limpar"
     Então a cor, tamanho e quantidade devem voltar ao estado original

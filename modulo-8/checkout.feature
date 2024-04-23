@@ -17,15 +17,7 @@ Contexto:
 Dado que estou na página de cadastro
 
 Cenário: Cadastro com sucesso
-E digito o nome <Nome>
-E digito o sobrenome <Sobrenome>
-E digito o país <País>
-E digito o endereço <Endereço>
-E digito a cidade <Cidade>
-E digito o cep <cep>
-E digito o telefone <Telefone>
-E digito o e-mail <E-mail>
-Quando clico em cadastrar
+Quando digitar os dados <Nome>, <Sobrenome>, <País>, <Endereço>, <Cidade>, <cep>, <Telefone>, <E-mail> e clicar em cadastrar
 Então devo ser cadastrado com sucesso
 
 
@@ -37,15 +29,7 @@ Exemplos:
 
 
 Cenário: Cadastro falta de dados
-E digito o nome <Nome>
-E digito o sobrenome <Sobrenome>
-E digito o país <País>
-E digito o endereço <Endereço>
-E digito a cidade <Cidade>
-E digito o cep <cep>
-E digito o telefone <Telefone>
-E digito o e-mail <E-mail>
-Quando clico em cadastrar
+Quando digito <Nome>, <Sobrenome>, <País>, <Endereço>, <Cidade>, <cep>, <Telefone>, <E-mail> e clicar em cadastrar
 Então devo ver a mensagem de alerta "Preencha todos os campos obrigatórios"
 
 Exemplos:
